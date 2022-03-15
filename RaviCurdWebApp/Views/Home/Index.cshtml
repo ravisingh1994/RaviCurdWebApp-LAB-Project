@@ -1,0 +1,48 @@
+﻿@model List<RaviCurdWebApp.MyDB_Connect.STUDETAIL>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<table body bgcolor=”#800000", class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">SID</th>
+            <th scope="col">SNAME</th>
+            <th scope="col">FEE</th>
+            <th scope="col">ROLL</th>
+        </tr>
+    </thead>
+    @foreach(var data in Model)
+        {
+    <tbody>
+        <tr>
+            <th scope="col">1</th>
+            <td>@data.SID</td>
+            <td>@data.SNAME</td>
+            <td>@data.FEE</td>
+            <td>@data.ROLL</td>
+        </tr>
+        </tbody>
+    }
+    </table>
+        @*<table>
+            <tr>
+                <th>SID</th>
+                <th>SNAME</th>
+                <th>FEE</th>
+                <th>ROLL</th>
+            </tr>
+
+            @foreach (var obj2 in Model)
+            {
+                <tr>
+                    <td>@obj2.SID</td>
+                    <td>@obj2.SNAME</td>
+                    <td>@obj2.FEE</td>
+                    <td>@obj2.FEE</td>
+                </tr>
+            }
+
+        </table>*@
